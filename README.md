@@ -41,6 +41,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
+* **Billie Thompson** - *Readme Template* - [PurpleBooth](https://github.com/PurpleBooth)
+
 * **Stan Mihaljcuk** - *Initial work* - [Shoxtrem](https://github.com/shoxtrem)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.

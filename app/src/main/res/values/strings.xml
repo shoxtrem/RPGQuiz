@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">RPGQuiz</string>
+    <!--First Screen MainActivity Strings-->
+    <string name="questionNumberOne">Where do you want to go?</string>
+    <string name="questionName">What\'s your character\'s name?</string>
+    <string name="questionPersonality">What\'s your character\'s personality?</string>
+    <string name="checkBoxAnswer1">Funny</string>
+    <string name="checkBoxAnswer2">Honest</string>
+    <string name="checkBoxAnswer3">Crazy</string>
+    <string name="checkBoxAnswer4">Charming</string>
+    <string name="checkBoxAnswer5">Stupid</string>
+    <string name="checkBoxAnswer6">Determined</string>
+    <string name="radioButtonChoice1MainActivity">Go to activity 2</string>
+    <string name="radioButtonChoice2MainActivity">Go to activity 3</string>
+    <string name="submitButton">Submit</string>
+    <!--Second Activity Strings-->
+    <string name="questionActivity2">What will you do?</string>
+    <string name="radioButtonChoice1SecondActivity">Go to Main activity </string>
+    <string name="radioButtonChoice2SecondActivity">Go to activity 3</string>
+    <!--Third Activity Strings -->
+    <string name="questionActivity3">Someone does something, how do you respond?</string>
+    <string name="radioButtonChoice1ThirdActivity">Go to Main activity </string>
+    <string name="radioButtonChoice2ThirdActivity">Go to activity 4</string>
+    <!--Fourth Activity Strings -->
+    <string name="questionActivity4">You\'re stuck, time to go back</string>
+    <string name="radioButtonChoice1FourthActivity">Go to activity 2</string>
+    <string name="radioButtonChoice2FourthActivity">Go to activity 3</string>
+    <string name="radioButtonChoice3FourthActivity">Go to Main activity </string>
+    <string name="radioButtonChoice4FourthActivity">Go to activity 4 (stay here)</string>
+
+
+
 </resources>

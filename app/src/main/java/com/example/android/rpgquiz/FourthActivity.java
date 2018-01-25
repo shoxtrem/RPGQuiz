@@ -9,14 +9,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.view.View.OnClickListener;
 
-public class MainActivity extends AppCompatActivity {
+public class FourthActivity extends AppCompatActivity {
 
-    // Remember to add your activity to the AndroidManifest.xml
     /**
      * ID for the current layout used in the onCreate() method
      * to load the right XML layout
      */
-    int currentActivityLayoutId = R.layout.activity_main;
+    int currentActivityLayoutId = R.layout.activity_fourth;
 
     /**
      * Template: int someIdVariableName = R.id.some_id_name;
@@ -30,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     // ID for the different radioButton choices.
     int firstChoiceRadioButtonId = R.id.first_choice_radioButton;
     int secondChoiceRadioButtonId = R.id.second_choice_radioButton;
+    int thirdChoiceRadioButtonId = R.id.third_choice_radioButton;
+    int fourthChoiceRadioButtonId = R.id.fourth_choice_radioButton;
     /**
      * Template: Class SomeClassVariableName =  SomeActivityName.class;
      * <p>
@@ -41,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
     Class firstChoiceRadioButtonClass = SecondActivity.class;
     Class secondChoiceRadioButtonClass = ThirdActivity.class;
+    Class thirdChoiceRadioButtonClass = MainActivity.class;
+    Class fourthChoiceRadioButtonClass = FourthActivity.class;
 
     // Class name for the activity you'll load based on results of radioButton
     private RadioGroup questionRadioGroup;
@@ -89,6 +92,10 @@ public class MainActivity extends AppCompatActivity {
                     goToNextActivity(firstChoiceRadioButtonClass);
                 } else if (submitAnswersRadioButton.getId() == secondChoiceRadioButtonId) {
                     goToNextActivity(secondChoiceRadioButtonClass);
+                }else if (submitAnswersRadioButton.getId() == thirdChoiceRadioButtonId) {
+                    goToNextActivity(thirdChoiceRadioButtonClass);
+                }else if (submitAnswersRadioButton.getId() == fourthChoiceRadioButtonId) {
+                    goToNextActivity(fourthChoiceRadioButtonClass);
                 }
 //                Toast.makeText(MainActivity.this,
 //                        submitAnswersRadioButton.getText(), Toast.LENGTH_SHORT).show();
@@ -104,12 +111,14 @@ public class MainActivity extends AppCompatActivity {
      * @param NextActivity activity to go to and load
      */
 
+
     public void goToNextActivity(Class NextActivity) {
 
         Intent nextAct = new Intent(this, NextActivity);
         if (nextAct.resolveActivity(getPackageManager()) != null) {
             startActivity(nextAct);
-            // Don't kill this activity as it is the main one
+            // Kills last activity so you can't go back
+            finish();
         }
 
     }

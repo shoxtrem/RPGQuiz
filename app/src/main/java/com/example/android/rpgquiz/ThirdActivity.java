@@ -9,15 +9,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.view.View.OnClickListener;
 
-public class MainActivity extends AppCompatActivity {
+public class ThirdActivity extends AppCompatActivity {
 
-    // Remember to add your activity to the AndroidManifest.xml
     /**
      * ID for the current layout used in the onCreate() method
      * to load the right XML layout
      */
-    int currentActivityLayoutId = R.layout.activity_main;
-
+    int currentActivityLayoutId = R.layout.activity_third;
     /**
      * Template: int someIdVariableName = R.id.some_id_name;
      * <p>
@@ -39,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
      * or keyboard shortcut Shift + F6
      */
 
-    Class firstChoiceRadioButtonClass = SecondActivity.class;
-    Class secondChoiceRadioButtonClass = ThirdActivity.class;
+    Class firstChoiceRadioButtonClass = MainActivity.class;
+    Class secondChoiceRadioButtonClass = FourthActivity.class;
 
     // Class name for the activity you'll load based on results of radioButton
     private RadioGroup questionRadioGroup;
@@ -104,12 +102,14 @@ public class MainActivity extends AppCompatActivity {
      * @param NextActivity activity to go to and load
      */
 
+
     public void goToNextActivity(Class NextActivity) {
 
         Intent nextAct = new Intent(this, NextActivity);
         if (nextAct.resolveActivity(getPackageManager()) != null) {
             startActivity(nextAct);
-            // Don't kill this activity as it is the main one
+            // Kills last activity so you can't go back
+            finish();
         }
 
     }

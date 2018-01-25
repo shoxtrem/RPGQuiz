@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- to add your activity use the following template : -->
+        <!-- <activity android:name=".NameOfYourActivity"></activity> -->
+        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".ThirdActivity"></activity>
+        <activity android:name=".FourthActivity"></activity>
+
     </application>
 
 </manifest>

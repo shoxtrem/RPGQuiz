@@ -41,10 +41,11 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Stan Mihaljcuk** - *Initial work* - [Shoxtrem](https://github.com/shoxtrem)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
+## Acknowledgments
 
 * Hat tip to anyone who's code was used
 * Inspiration
@@ -54,4 +55,3 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments

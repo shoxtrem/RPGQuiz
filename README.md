@@ -10,21 +10,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
 
-```
-Android Studio
-```
+* Android Studio
+
 To install Android Studio for Windows/Max/Linux follow the instructions [here](https://developer.android.com/studio/install.html)
 at the official Android Developper Documentation instructions.
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
 You can use a great tool, by **cesarferreira** called 
-```
-dryrun 
-```
+
+ * dryrun 
+
 You can find it [here](https://github.com/cesarferreira/dryrun) on GitHub with all the instructions on how to use it and run an app
 
 Alternatively you can run it on your Android device or an emulator with Android studio.
@@ -41,7 +37,6 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Readme Template* - [PurpleBooth](https://github.com/PurpleBooth)
 
 * **Stan Mihaljcuk** - *Initial work* - [Shoxtrem](https://github.com/shoxtrem)
 
@@ -51,7 +46,8 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 * Hat tip to anyone who's code was used
 * Inspiration
-* etc
+* cesarferreira
+* Billie Thompson - *Readme Template* - [PurpleBooth](https://github.com/PurpleBooth)
 
 ## License
 

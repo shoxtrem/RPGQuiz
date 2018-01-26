@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">RPGQuiz</string>
     <!--First Screen MainActivity Strings-->
-    <string name="questionNumberOne">Where do you want to go?</string>
+    <string name="introduction">Welcome to RPG Quiz, a written RPG where you\'ll be confronted to different situations and
+        will have to make tough choices. You cannot go back. Using the back key will undo all your progress. Closing the app as well.
+    </string>
+    <string name="questionNumberOne">You wake up in a cold stone room. You don\'t remember what brought you here. You look around for a way out. You
+    see two doors. One on your left and the other right in front of you. Which do you go through?</string>
     <string name="questionName">What\'s your character\'s name?</string>
     <string name="questionPersonality">What\'s your character\'s personality?</string>
     <string name="checkBoxAnswer1">Funny</string>
@@ -10,23 +14,26 @@
     <string name="checkBoxAnswer4">Charming</string>
     <string name="checkBoxAnswer5">Stupid</string>
     <string name="checkBoxAnswer6">Determined</string>
-    <string name="radioButtonChoice1MainActivity">Go to activity 2</string>
-    <string name="radioButtonChoice2MainActivity">Go to activity 3</string>
+    <string name="radioButtonChoice1MainActivity">I\'ll take the one on the left.</string>
+    <string name="radioButtonChoice2MainActivity">Let\'s go through the front door.</string>
     <string name="submitButton">Submit</string>
     <!--Second Activity Strings-->
-    <string name="questionActivity2">What will you do?</string>
-    <string name="radioButtonChoice1SecondActivity">Go to Main activity </string>
-    <string name="radioButtonChoice2SecondActivity">Go to activity 3</string>
+    <string name="questionActivity2">You open the door that was to your left. You enter and suddenly you fall into a pit. The ground has collapsed.
+        Fortunately, you fell into some sand and you\'re unharmed. You observe your surroundings and come to the conclusion
+    that you can climb back to the door. You also see a shiny object, buried in the sand. You decide to&#8230;</string>
+    <string name="radioButtonChoice1SecondActivity">Climb to the door. I need to get out of here! </string>
+    <string name="radioButtonChoice2SecondActivity">Shiny means valuable. We can always go back after that.</string>
     <!--Third Activity Strings -->
-    <string name="questionActivity3">Someone does something, how do you respond?</string>
-    <string name="radioButtonChoice1ThirdActivity">Go to Main activity </string>
-    <string name="radioButtonChoice2ThirdActivity">Go to activity 4</string>
+    <string name="questionActivity3">You came in the front door? Or maybe you touched a glittering object? Doesn\'t matter. You\'ve forgotten
+        why you\'re here again. Only two choices can be made.</string>
+    <string name="radioButtonChoice1ThirdActivity">Go back to the main room you started in</string>
+    <string name="radioButtonChoice2ThirdActivity">Go in the corner to meditate</string>
     <!--Fourth Activity Strings -->
-    <string name="questionActivity4">You\'re stuck, time to go back</string>
-    <string name="radioButtonChoice1FourthActivity">Go to activity 2</string>
-    <string name="radioButtonChoice2FourthActivity">Go to activity 3</string>
-    <string name="radioButtonChoice3FourthActivity">Go to Main activity </string>
-    <string name="radioButtonChoice4FourthActivity">Go to activity 4 (stay here)</string>
+    <string name="questionActivity4">You realize that whatever you do, nothing changes. You can\'t escape. You\'re stuck, time to make a choice.</string>
+    <string name="radioButtonChoice1FourthActivity">Go through the door on the on the left</string>
+    <string name="radioButtonChoice2FourthActivity">Touch the shiny object</string>
+    <string name="radioButtonChoice3FourthActivity">Go to the main room</string>
+    <string name="radioButtonChoice4FourthActivity">Wait here and stay</string>
 
 
 

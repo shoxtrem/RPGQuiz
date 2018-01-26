@@ -16,76 +16,83 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="14dp"
-            android:paddingBottom="14dp"
-            android:text="@string/questionName"
+            android:text="@string/introduction"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="24sp" />
+            android:textSize="24sp"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="14dp"-->
+            <!--android:paddingBottom="14dp"-->
+            <!--android:text="@string/questionName"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:textSize="24sp" />-->
 
 
-        <EditText
-            android:id="@+id/character_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:inputType="textPersonName" />
+        <!--<EditText-->
+            <!--android:id="@+id/character_name"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:inputType="textPersonName" />-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="14dp"
-            android:text="@string/questionPersonality"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="22sp" />
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="14dp"-->
+            <!--android:text="@string/questionPersonality"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:textSize="22sp" />-->
 
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="@string/checkBoxAnswer1"
-            android:textSize="16sp" />
+        <!--<CheckBox-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="24dp"-->
+            <!--android:paddingRight="24dp"-->
+            <!--android:text="@string/checkBoxAnswer1"-->
+            <!--android:textSize="16sp" />-->
 
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="@string/checkBoxAnswer2"
-            android:textSize="16sp" />
+        <!--<CheckBox-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="24dp"-->
+            <!--android:paddingRight="24dp"-->
+            <!--android:text="@string/checkBoxAnswer2"-->
+            <!--android:textSize="16sp" />-->
 
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="@string/checkBoxAnswer3"
-            android:textSize="16sp" />
+        <!--<CheckBox-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="24dp"-->
+            <!--android:paddingRight="24dp"-->
+            <!--android:text="@string/checkBoxAnswer3"-->
+            <!--android:textSize="16sp" />-->
 
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="@string/checkBoxAnswer4"
-            android:textSize="16sp" />
+        <!--<CheckBox-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="24dp"-->
+            <!--android:paddingRight="24dp"-->
+            <!--android:text="@string/checkBoxAnswer4"-->
+            <!--android:textSize="16sp" />-->
 
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="@string/checkBoxAnswer5"
-            android:textSize="16sp" />
+        <!--<CheckBox-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="24dp"-->
+            <!--android:paddingRight="24dp"-->
+            <!--android:text="@string/checkBoxAnswer5"-->
+            <!--android:textSize="16sp" />-->
 
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:text="@string/checkBoxAnswer6"
-            android:textSize="16sp" />
+        <!--<CheckBox-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="24dp"-->
+            <!--android:paddingRight="24dp"-->
+            <!--android:text="@string/checkBoxAnswer6"-->
+            <!--android:textSize="16sp" />-->
 
         <TextView
             android:layout_width="match_parent"

@@ -109,7 +109,6 @@ public class SecondActivity extends AppCompatActivity {
         Intent nextAct = new Intent(this, NextActivity);
         if (nextAct.resolveActivity(getPackageManager()) != null) {
             startActivity(nextAct);
-            // Kills last activity so you can't go back
             finish();
         }
 

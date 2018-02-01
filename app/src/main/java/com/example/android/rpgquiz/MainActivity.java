@@ -11,13 +11,6 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Remember to add your activity to the AndroidManifest.xml
-    /**
-     * ID for the current layout used in the onCreate() method
-     * to load the right XML layout
-     */
-    int currentActivityLayoutId = R.layout.activity_main;
-
     /**
      * Template: int someIdVariableName = R.id.some_id_name;
      * <p>
@@ -44,12 +37,17 @@ public class MainActivity extends AppCompatActivity {
 
     // Class name for the activity you'll load based on results of radioButton
     private RadioGroup questionRadioGroup;
+    private Button btnDisplay;
     private RadioButton submitAnswersRadioButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(currentActivityLayoutId);
+        setContentView(R.layout.activity_main);
+        
+        //Views initialization
+        questionRadioGroup = (RadioGroup) findViewById(R.id.choose_something);
+        btnDisplay = (Button) findViewById(R.id.submitButton);
 
         addListenerOnButton();
 
@@ -66,9 +64,6 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void addListenerOnButton() {
-
-        questionRadioGroup = (RadioGroup) findViewById(R.id.choose_something);
-        Button btnDisplay = (Button) findViewById(R.id.submitButton);
 
         btnDisplay.setOnClickListener(new OnClickListener() {
 

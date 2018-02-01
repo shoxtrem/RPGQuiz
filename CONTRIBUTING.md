@@ -7,14 +7,66 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## Pull Request Process
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
-   build.
-2. Update the README.md with details of changes to the interface, this includes new environment 
-   variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md to the new version that this
-   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
-   do not have permission to do that, you may request the second reviewer to merge it for you.
+Follow theses steps to make a Pull Request:
+
+### Only the first time:
+* Fork the project:
+```
+Click on the fork button on the top right of the screen
+```
+* Clone your forked project:
+```
+git clone <repo_url>
+```
+* Link your repo with the original repo in order to keep it up to date:
+```
+git remote add upstream https://github.com/shoxtrem/RPGQuiz.git
+```
+  
+### To keep your repo up to date with the original repo. So to do before working on a new contribution.
+* Ensure that you have the most recent version of the original repo:
+```
+git fetch upstream
+git branch -va
+```
+* Update your master to the last version
+```
+git checkout master
+git merge upstream/master
+```
+  
+### To do your contribution
+* Create a new branch where you will make your contribution and change your working directory on it:
+```
+git checkout master
+git branch <branch_name>
+git checkout <branch_name>
+```
+* Make your contribution, **following the commit advices below**
+
+### Submit a Pull Request
+* Once you finished your contribution, check that your branch include the lasts modifications of the original repo:
+```
+git fetch upstream
+git checkout master
+git merge upstream/master
+git checkout newfeature
+git rebase master
+```
+* Commit and push all your modifications in your GitHub repo.
+* On GitHub, select your development branch and click the Pull Request button
+
+## Commit Message Style Guide
+
+We will follow the Udacity [style guide](http://udacity.github.io/git-styleguide/).
+To resume, the differents types are :
+* feat: a new feature
+* fix: a bug fix
+* docs: changes to documentation
+* style: formatting, missing semi colons, etc; no code change
+* refactor: refactoring production code
+* test: adding tests, refactoring test; no production code change
+* chore: updating build tasks, package manager configs, etc; no production code change
 
 ## Code of Conduct
 

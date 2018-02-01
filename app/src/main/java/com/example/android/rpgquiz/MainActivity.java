@@ -11,30 +11,6 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    /**
-     * Template: int someIdVariableName = R.id.some_id_name;
-     * <p>
-     * Hint:
-     * to change a variable name on all instances
-     * use *right click* --> Refactor --> Rename
-     * or keyboard shortcut Shift + F6
-     */
-
-    // ID for the different radioButton choices.
-    int firstChoiceRadioButtonId = R.id.first_choice_radioButton;
-    int secondChoiceRadioButtonId = R.id.second_choice_radioButton;
-    /**
-     * Template: Class SomeClassVariableName =  SomeActivityName.class;
-     * <p>
-     * Hint:
-     * to change a variable name on all instances
-     * use *right click* --> Refactor --> Rename
-     * or keyboard shortcut Shift + F6
-     */
-
-    Class firstChoiceRadioButtonClass = SecondActivity.class;
-    Class secondChoiceRadioButtonClass = ThirdActivity.class;
-
     // Class name for the activity you'll load based on results of radioButton
     private RadioGroup questionRadioGroup;
     private Button btnDisplay;
@@ -80,10 +56,10 @@ public class MainActivity extends AppCompatActivity {
                 // if none are selected, do nothing.
                 if (questionRadioGroup.getCheckedRadioButtonId() == -1) {
                     return;
-                } else if (submitAnswersRadioButton.getId() == firstChoiceRadioButtonId) {
-                    goToNextActivity(firstChoiceRadioButtonClass);
-                } else if (submitAnswersRadioButton.getId() == secondChoiceRadioButtonId) {
-                    goToNextActivity(secondChoiceRadioButtonClass);
+                } else if (submitAnswersRadioButton.getId() == R.id.first_choice_radioButton) {
+                    goToNextActivity(1);
+                } else if (submitAnswersRadioButton.getId() == R.id.second_choice_radioButton) {
+                    goToNextActivity(2);
                 }
 //                Toast.makeText(MainActivity.this,
 //                        submitAnswersRadioButton.getText(), Toast.LENGTH_SHORT).show();
@@ -94,19 +70,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Loads a new activity and kills the current one
+     * Loads a new activity
      *
-     * @param NextActivity activity to go to and load
+     * @param activityReference 
+                a {@code int} value representing activity to go to and load.
      */
 
-    public void goToNextActivity(Class NextActivity) {
+    public void goToNextActivity(Class activityReference) {
 
-        Intent nextAct = new Intent(this, NextActivity);
-        if (nextAct.resolveActivity(getPackageManager()) != null) {
-            startActivity(nextAct);
-            // Don't kill this activity as it is the main one
-        }
-
+        if(activityReference == 1)
+            startActivity(new Intent(this, SecondActivity.class));
+        else
+            startActivity(new Intent(this, ThirdActivity.class));
     }
-
 }

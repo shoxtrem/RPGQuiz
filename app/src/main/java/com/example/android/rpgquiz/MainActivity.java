@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * The submit Button listener
      */
-    View.OnClickListener submitClickListner = new View.OnClickListener() {
+    View.OnClickListener submitClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(getApplicationContext(), TemplateActivity.class);
@@ -34,6 +34,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button submitB = findViewById(R.id.submitButton);
-        submitB.setOnClickListener(submitClickListner);
+        submitB.setOnClickListener(submitClickListener);
     }
 }

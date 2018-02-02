@@ -51,7 +51,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(currentActivityLayoutId);
 
-        addListenerOnButton();
+        //addListenerOnButton();
+        Button help_button = (Button) findViewById(R.id.help_button);
+        help_button.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent helpIntent = new Intent(MainActivity.this, HelpActivity.class);
+                startActivity(helpIntent);
+            }
+        });
+
 
     }
 
@@ -65,38 +74,41 @@ public class MainActivity extends AppCompatActivity {
      * }
      */
 
-    public void addListenerOnButton() {
+//    public void addListenerOnButton() {
+//
+//        questionRadioGroup = (RadioGroup) findViewById(R.id.choose_something);
+//        Button btnDisplay = (Button) findViewById(R.id.submitButton);
+//
+//       btnDisplay.setOnClickListener(new OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//
+//                // get selected radioButton from radioGroup
+//                int selectedId = questionRadioGroup.getCheckedRadioButtonId();
+//
+//                // find the radioButton by returned id
+//                submitAnswersRadioButton = (RadioButton) findViewById(selectedId);
+//
+//                // Check what Radio button was chosen to change to the right activity
+//                // if none are selected, do nothing.
+//                if (questionRadioGroup.getCheckedRadioButtonId() == -1) {
+//                    return;
+//                } else if (submitAnswersRadioButton.getId() == firstChoiceRadioButtonId) {
+//                    goToNextActivity(firstChoiceRadioButtonClass);
+//                } else if (submitAnswersRadioButton.getId() == secondChoiceRadioButtonId) {
+//                    goToNextActivity(secondChoiceRadioButtonClass);
+//                }
+////                Toast.makeText(MainActivity.this,
+////                        submitAnswersRadioButton.getText(), Toast.LENGTH_SHORT).show();
+//
+//            }
+//
+//        });
+//    }
 
-        questionRadioGroup = (RadioGroup) findViewById(R.id.choose_something);
-        Button btnDisplay = (Button) findViewById(R.id.submitButton);
 
-        btnDisplay.setOnClickListener(new OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-
-                // get selected radioButton from radioGroup
-                int selectedId = questionRadioGroup.getCheckedRadioButtonId();
-
-                // find the radioButton by returned id
-                submitAnswersRadioButton = (RadioButton) findViewById(selectedId);
-
-                // Check what Radio button was chosen to change to the right activity
-                // if none are selected, do nothing.
-                if (questionRadioGroup.getCheckedRadioButtonId() == -1) {
-                    return;
-                } else if (submitAnswersRadioButton.getId() == firstChoiceRadioButtonId) {
-                    goToNextActivity(firstChoiceRadioButtonClass);
-                } else if (submitAnswersRadioButton.getId() == secondChoiceRadioButtonId) {
-                    goToNextActivity(secondChoiceRadioButtonClass);
-                }
-//                Toast.makeText(MainActivity.this,
-//                        submitAnswersRadioButton.getText(), Toast.LENGTH_SHORT).show();
-
-            }
-
-        });
-    }
 
     /**
      * Loads a new activity and kills the current one

@@ -8,4 +8,7 @@
     <dimen name="button_margin_bottom">15dp</dimen>
     <dimen name="text_size_help">25sp</dimen>
     <dimen name="margin_text_help">270sp</dimen>
+	<dimen name="storyPadding">14dp</dimen>
+    <dimen name="storyTextSize">26sp</dimen>
+    <dimen name="choicePadding">25dp</dimen>
 </resources>

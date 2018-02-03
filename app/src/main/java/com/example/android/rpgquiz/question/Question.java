@@ -5,10 +5,25 @@ package com.example.android.rpgquiz.question;
 public class Question {
 
     //Instance private members
-    private String question; //Textual question
-    private String[] possibleAnswer; // Array of possible answers
-    private boolean[] possibleAnswerState; //Array of possible answers state
-    private boolean passed; //Question passed state
+    private String question;
+    private String[] possibleAnswer;
+    private boolean[] possibleAnswerState;
+    private boolean passed;
+
+    /**
+     * This is a {@link Question} object public constructor, this object is used to instantiate a new {@link Question} object
+     *
+     * @param question            A {@code String} representing this textual question.
+     * @param possibleAnswer      An {@code String} array with all the possible answers for this question.
+     * @param possibleAnswerState A {@code boolean} array with all the possible answers state, true = correct / false = incorrect answer.
+     * @param passed              A {@code boolean} representing if this question was passed.
+     */
+    public Question(String question, String[] possibleAnswer, boolean[] possibleAnswerState, boolean passed) {
+        this.question = question;
+        this.possibleAnswer = possibleAnswer;
+        this.possibleAnswerState = possibleAnswerState;
+        this.passed = passed;
+    }
 
 
     /**
@@ -42,4 +57,6 @@ public class Question {
     public void setPassed(boolean passed) {
         this.passed = passed;
     }
+
+
 }

@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:text="@string/introduction"
         android:gravity="center_vertical"
-        android:textSize="25sp"
+        android:textSize="@dimen/text_size_help"
         android:drawableTop="@drawable/help_map"
         android:fontFamily="@font/help_font"
         android:textColor="@android:color/black"/>

@@ -27,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
      * or keyboard shortcut Shift + F6
      */
 
-    // ID for the different radioButton choices.
-    int firstChoiceRadioButtonId = R.id.first_choice_radioButton;
-    int secondChoiceRadioButtonId = R.id.second_choice_radioButton;
+
     /**
      * Template: Class SomeClassVariableName =  SomeActivityName.class;
      * <p>
@@ -38,13 +36,6 @@ public class MainActivity extends AppCompatActivity {
      * use *right click* --> Refactor --> Rename
      * or keyboard shortcut Shift + F6
      */
-
-    Class firstChoiceRadioButtonClass = SecondActivity.class;
-    Class secondChoiceRadioButtonClass = ThirdActivity.class;
-
-    // Class name for the activity you'll load based on results of radioButton
-    private RadioGroup questionRadioGroup;
-    private RadioButton submitAnswersRadioButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,66 +55,5 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * Template to add new options :
-     * Add else if statements to add more choices :
-     * <p>
-     * <p>
-     * else if (submitAnswersRadioButton.getId() == someIdVariableName){
-     * goToNextActivity(SomeClassVariableName);
-     * }
-     */
-
-//    public void addListenerOnButton() {
-//
-//        questionRadioGroup = (RadioGroup) findViewById(R.id.choose_something);
-//        Button btnDisplay = (Button) findViewById(R.id.submitButton);
-//
-//       btnDisplay.setOnClickListener(new OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//
-//                // get selected radioButton from radioGroup
-//                int selectedId = questionRadioGroup.getCheckedRadioButtonId();
-//
-//                // find the radioButton by returned id
-//                submitAnswersRadioButton = (RadioButton) findViewById(selectedId);
-//
-//                // Check what Radio button was chosen to change to the right activity
-//                // if none are selected, do nothing.
-//                if (questionRadioGroup.getCheckedRadioButtonId() == -1) {
-//                    return;
-//                } else if (submitAnswersRadioButton.getId() == firstChoiceRadioButtonId) {
-//                    goToNextActivity(firstChoiceRadioButtonClass);
-//                } else if (submitAnswersRadioButton.getId() == secondChoiceRadioButtonId) {
-//                    goToNextActivity(secondChoiceRadioButtonClass);
-//                }
-////                Toast.makeText(MainActivity.this,
-////                        submitAnswersRadioButton.getText(), Toast.LENGTH_SHORT).show();
-//
-//            }
-//
-//        });
-//    }
-
-
-
-
-    /**
-     * Loads a new activity and kills the current one
-     *
-     * @param NextActivity activity to go to and load
-     */
-
-    public void goToNextActivity(Class NextActivity) {
-
-        Intent nextAct = new Intent(this, NextActivity);
-        if (nextAct.resolveActivity(getPackageManager()) != null) {
-            startActivity(nextAct);
-            // Don't kill this activity as it is the main one
-        }
-
-    }
 
 }

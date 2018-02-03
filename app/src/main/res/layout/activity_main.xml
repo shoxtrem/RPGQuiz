@@ -6,9 +6,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
     android:background="@drawable/background"
     android:orientation="vertical"
+    android:padding="@dimen/layout_padding"
     tools:context="com.example.android.rpgquiz.MainActivity">
 
     <TextView
@@ -17,52 +17,54 @@
         android:layout_above="@+id/linear_layout"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/new_font"
-        android:text="RPG Quiz"
+        android:text="@string/game_text"
         android:textColor="@android:color/black"
-        android:textSize="100sp" />
+        android:textSize="@dimen/game_text_size" />
+
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/language_button"
         android:layout_centerHorizontal="true">
-    <Button
-        android:id="@+id/start_button"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:drawableLeft="@drawable/start"
-        android:drawablePadding="7dp"
-        android:text="Start"
-        android:fontFamily="@font/new_font"
-        android:layout_marginRight="5dp"
-        android:textSize="20sp" />
-    <Button
-        android:id="@+id/help_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/help"
-        android:drawablePadding="7dp"
-        android:layout_marginLeft="5dp"
-        android:gravity="center"
-        android:text="Help"
-        android:fontFamily="@font/new_font"
-        android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/button_margin"
+            android:drawableLeft="@drawable/start"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:fontFamily="@font/new_font"
+            android:text="@string/start_button"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/help_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:drawableLeft="@drawable/help"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:fontFamily="@font/new_font"
+            android:gravity="center"
+            android:text="@string/help_button"
+            android:textSize="@dimen/button_text_size" />
     </LinearLayout>
 
     <Button
         android:id="@+id/language_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/language"
-        android:drawablePadding="7dp"
-        android:fontFamily="@font/new_font"
-        android:layout_centerHorizontal="true"
-        android:text="Language"
-        android:layout_marginTop="5dp"
         android:layout_alignParentBottom="true"
-        android:textSize="20sp"
-        android:layout_marginBottom="15dp"
-        />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/button_margin_bottom"
+        android:layout_marginTop="@dimen/button_margin"
+        android:drawableLeft="@drawable/language"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:fontFamily="@font/new_font"
+        android:text="@string/language_button"
+        android:textSize="@dimen/button_text_size" />
 
 
 </RelativeLayout>

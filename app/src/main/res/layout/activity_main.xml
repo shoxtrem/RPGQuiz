@@ -1,136 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding"
+    tools:context="com.example.android.rpgquiz.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_layout"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/new_font"
+        android:text="@string/game_text"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/game_text_size" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="24dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        tools:context="com.example.android.rpgquiz.MainActivity">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/introduction"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="24sp"/>
-
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingTop="14dp"-->
-            <!--android:paddingBottom="14dp"-->
-            <!--android:text="@string/questionName"-->
-            <!--android:textColor="@color/colorPrimaryDark"-->
-            <!--android:textSize="24sp" />-->
-
-
-        <!--<EditText-->
-            <!--android:id="@+id/character_name"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="center"-->
-            <!--android:inputType="textPersonName" />-->
-
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="center"-->
-            <!--android:padding="14dp"-->
-            <!--android:text="@string/questionPersonality"-->
-            <!--android:textColor="@color/colorPrimaryDark"-->
-            <!--android:textSize="22sp" />-->
-
-        <!--<CheckBox-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="24dp"-->
-            <!--android:paddingRight="24dp"-->
-            <!--android:text="@string/checkBoxAnswer1"-->
-            <!--android:textSize="16sp" />-->
-
-        <!--<CheckBox-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="24dp"-->
-            <!--android:paddingRight="24dp"-->
-            <!--android:text="@string/checkBoxAnswer2"-->
-            <!--android:textSize="16sp" />-->
-
-        <!--<CheckBox-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="24dp"-->
-            <!--android:paddingRight="24dp"-->
-            <!--android:text="@string/checkBoxAnswer3"-->
-            <!--android:textSize="16sp" />-->
-
-        <!--<CheckBox-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="24dp"-->
-            <!--android:paddingRight="24dp"-->
-            <!--android:text="@string/checkBoxAnswer4"-->
-            <!--android:textSize="16sp" />-->
-
-        <!--<CheckBox-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="24dp"-->
-            <!--android:paddingRight="24dp"-->
-            <!--android:text="@string/checkBoxAnswer5"-->
-            <!--android:textSize="16sp" />-->
-
-        <!--<CheckBox-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="24dp"-->
-            <!--android:paddingRight="24dp"-->
-            <!--android:text="@string/checkBoxAnswer6"-->
-            <!--android:textSize="16sp" />-->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="14dp"
-            android:text="@string/questionNumberOne"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="26sp" />
-
-
-        <RadioGroup
-            android:id="@+id/choose_something"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="25dp">
-
-            <RadioButton
-                android:id="@+id/first_choice_radioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radioButtonChoice1MainActivity" />
-
-            <RadioButton
-                android:id="@+id/second_choice_radioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radioButtonChoice2MainActivity" />
-
-        </RadioGroup>
+        android:layout_above="@id/language_button"
+        android:layout_centerHorizontal="true">
 
         <Button
-            android:id="@+id/submitButton"
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/button_margin"
+            android:drawableLeft="@drawable/start"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:fontFamily="@font/new_font"
+            android:text="@string/start_button"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/help_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:text="@string/submitButton" />
+            android:layout_marginLeft="@dimen/button_margin"
+            android:drawableLeft="@drawable/help"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:fontFamily="@font/new_font"
+            android:gravity="center"
+            android:text="@string/help_button"
+            android:textSize="@dimen/button_text_size" />
     </LinearLayout>
-</ScrollView>
+
+    <Button
+        android:id="@+id/language_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/button_margin_bottom"
+        android:layout_marginTop="@dimen/button_margin"
+        android:drawableLeft="@drawable/language"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:fontFamily="@font/new_font"
+        android:text="@string/language_button"
+        android:textSize="@dimen/button_text_size" />
+
+
+</RelativeLayout>
+
+

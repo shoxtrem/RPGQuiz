@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">RPGQuiz</string>
     <!--First Screen MainActivity Strings-->
+    <string name="game_text">RPG Quiz</string>
+    <string name="start_button">Start</string>
+    <string name="help_button">Help</string>
+    <string name="language_button">Language</string>
+    <!--HelpActivity Strings-->
     <string name="introduction">Welcome to RPG Quiz, a written RPG where you\'ll be confronted to different situations and
         will have to make tough choices. You cannot go back. Using the back key will undo all your progress. Closing the app as well.
     </string>
+    <!--Upcoming questions Strings-->
     <string name="questionNumberOne">You wake up in a cold stone room. You don\'t remember what brought you here. You look around for a way out. You
     see two doors. One on your left and the other right in front of you. Which do you go through?</string>
     <string name="questionName">What\'s your character\'s name?</string>
@@ -34,7 +40,5 @@
     <string name="radioButtonChoice2FourthActivity">Touch the shiny object</string>
     <string name="radioButtonChoice3FourthActivity">Go to the main room</string>
     <string name="radioButtonChoice4FourthActivity">Wait here and stay</string>
-
-
 
 </resources>

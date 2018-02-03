@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_padding">24dp</dimen>
+    <dimen name="game_text_size">100sp</dimen>
+    <dimen name="drawable_padding">7dp</dimen>
+    <dimen name="button_margin">5dp</dimen>
+    <dimen name="button_text_size">20sp</dimen>
+    <dimen name="button_margin_bottom">15dp</dimen>
+    <dimen name="text_size_help">25sp</dimen>
+</resources>

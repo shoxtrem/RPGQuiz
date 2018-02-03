@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:padding="24dp"
->
+    android:padding="@dimen/button_margin_bottom">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/text_size_help"
+        android:drawableTop="@drawable/help_map"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/button_margin"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/giff"
+        android:layout_marginTop="@dimen/button_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@raw/source2" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:text="@string/introduction"
         android:gravity="center_vertical"
         android:textSize="@dimen/text_size_help"
-        android:drawableTop="@drawable/help_map"
+        android:layout_marginTop="@dimen/margin_text_help"
+        android:layout_alignParentBottom="true"
         android:fontFamily="@font/help_font"
         android:textColor="@android:color/black"/>
 
 
-</LinearLayout>
+</RelativeLayout>
+</ScrollView>

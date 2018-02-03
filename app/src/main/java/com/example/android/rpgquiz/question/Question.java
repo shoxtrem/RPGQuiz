@@ -48,6 +48,15 @@ public class Question {
     }
 
     /**
+     * Return a {@code String} array representing the possible answers for this question.
+     *
+     * @return a <tt>String</tt> array representing the possible answers for this question.
+     */
+    public String[] getPossibleAnswers() {
+        return possibleAnswers;
+    }
+
+    /**
      * Returns a {@code boolean} representing the question passed state, true = passed / false = not passed.
      *
      * @return a <tt>boolean</tt> representing the question passed state.

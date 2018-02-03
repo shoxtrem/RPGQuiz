@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="@dimen/layoutPadding">
+        android:padding="@dimen/layout_padding">
 
         <TextView
             android:id="@+id/storyText"

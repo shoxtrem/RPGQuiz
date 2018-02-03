@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button help_button = (Button) findViewById(R.id.help_button);
-        help_button.setOnClickListener(new OnClickListener() {
+        Button help_button = findViewById(R.id.help_button);
+        help_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent helpIntent = new Intent(MainActivity.this, HelpActivity.class);
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button submitB = findViewById(R.id.submitButton);
+        Button submitB = findViewById(R.id.start_button);
         submitB.setOnClickListener(submitClickListener);
     }
 }

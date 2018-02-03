@@ -1,15 +1,18 @@
 package com.example.android.rpgquiz.question;
 
 
-//TODO : 1 - Create questions json file inside assets folder...
-
-
+/**
+ * The {@link Question} class represents a question that can know the correct answer, if it was passed, etc...
+ *
+ * @author Fábio Gouveia
+ * @version 1.0
+ */
 public class Question {
 
     //Instance private members
     private String question;
-    private String[] possibleAnswer;
-    private boolean[] possibleAnswerState;
+    private String[] possibleAnswers;
+    private boolean[] possibleAnswersState;
     private boolean passed;
 
     /**
@@ -22,8 +25,8 @@ public class Question {
      */
     public Question(String question, String[] possibleAnswer, boolean[] possibleAnswerState, boolean passed) {
         this.question = question;
-        this.possibleAnswer = possibleAnswer;
-        this.possibleAnswerState = possibleAnswerState;
+        this.possibleAnswers = possibleAnswer;
+        this.possibleAnswersState = possibleAnswerState;
         this.passed = passed;
     }
 

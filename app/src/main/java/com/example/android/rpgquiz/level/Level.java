@@ -4,7 +4,15 @@ import com.example.android.rpgquiz.question.Question;
 
 import java.util.ArrayList;
 
-
+/**
+ * The {@link Level} class represents a level in game with a infinite number of questions, this level has capabilities
+ * to know when all it's questions was passed, also can return it's name, score, etc...
+ *
+ * @author Fábio Gouveia
+ * @version 1.0
+ * @see ArrayList
+ * @see Question
+ */
 
 public class Level {
 

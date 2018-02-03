@@ -16,11 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- to add your activity use the following template : -->
-        <!-- <activity android:name=".NameOfYourActivity"></activity> -->
-        <activity android:name=".SecondActivity"></activity>
-        <activity android:name=".ThirdActivity"></activity>
-        <activity android:name=".FourthActivity"></activity>
         <activity
             android:name=".HelpActivity"
             android:label="Help"
@@ -30,7 +25,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
+        <activity android:name=".TemplateActivity"></activity>
     </application>
 
 </manifest>

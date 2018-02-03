@@ -30,11 +30,13 @@ public class TemplateActivity extends AppCompatActivity {
         public void onClick(View view) {
             // Get the selected StoryChoice
             int selectedId = radioGroup.getCheckedRadioButtonId();
-            StoryChoice choice = choices.get(selectedId);
+            if (selectedId != -1) {
+                StoryChoice choice = choices.get(selectedId);
 
-            Intent intent = new Intent(getApplicationContext(), TemplateActivity.class);
-            intent.putExtra(STORY_ID, choice.mNextStory);
-            startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), TemplateActivity.class);
+                intent.putExtra(STORY_ID, choice.mNextStory);
+                startActivity(intent);
+            }
         }
     };
 

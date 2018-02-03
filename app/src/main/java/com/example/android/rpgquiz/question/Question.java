@@ -5,4 +5,10 @@ package com.example.android.rpgquiz.question;
  */
 
 public class Question {
+
+    //Instance variables
+    private String question; //Textual question
+    private String[] possibleAnswer; // Array of possible answers
+    private boolean[] possibleAnswerState; //Array of possible answers state
+    private boolean passed; //Question passed state
 }

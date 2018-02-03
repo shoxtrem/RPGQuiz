@@ -1,6 +1,8 @@
 package com.example.android.rpgquiz.question;
 
 
+//TODO : 1 - Create questions json file inside assets folder...
+
 
 public class Question {
 
@@ -59,4 +61,39 @@ public class Question {
     }
 
 
+    /**
+     * This method is used to verify a textual answer.
+     *
+     * @param answer A {@code String} representing a textual answer.
+     * @return a <tt>boolean</tt> representing if the answer is right, true = right / false = wrong.
+     */
+    public boolean checkAnswer(String answer) {
+
+        /*
+            TODO : 1 - Get answer string from assets/questions.json
+            TODO : 2 - Compare the two strings using equalsIgnoreCase method
+            TODO : 3 - Return the result
+        */
+
+        return false;//#TESTE ONLY
+    }
+
+    /**
+     * This method is used to verify a multiple choice answer.
+     * This method works both on one or multiple right answers.
+     *
+     * @param answer A {@code String} array with user choices.
+     * @return a <tt>boolean</tt> representing if the answers was right, true = right / false = wrong.
+     */
+    public boolean chackAnswer(String[] answer) {
+
+        /*
+            TODO : 1 - Get answer string array from assets/questions.json
+            TODO : 2 - Loop trough all array boolean with an iterator
+            TODO : 3 - Compare the two strings array using equalsIgnoreCase method
+            TODO : 4 - Return the result
+        */
+
+        return false;//#TESTE ONLY
+    }
 }

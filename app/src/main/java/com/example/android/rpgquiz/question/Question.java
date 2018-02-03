@@ -1,6 +1,8 @@
 package com.example.android.rpgquiz.question;
 
 
+import java.util.Arrays;
+
 /**
  * The {@link Question} class represents a question that can know the correct answer, if it was passed, etc...
  *
@@ -19,7 +21,7 @@ public class Question {
      * This is a {@link Question} object public constructor, this object is used to instantiate a new {@link Question} object
      *
      * @param question            A {@code String} representing this textual question.
-     * @param possibleAnswer      An {@code String} array with all the possible answers for this question.
+     * @param possibleAnswer      A {@code String} array with all the possible answers for this question.
      * @param possibleAnswerState A {@code boolean} array with all the possible answers state, true = correct / false = incorrect answer.
      * @param passed              A {@code boolean} representing if this question was passed.
      */
@@ -94,18 +96,18 @@ public class Question {
      * This method is used to verify a multiple choice answer.
      * This method works both on one or multiple right answers.
      *
-     * @param answer A {@code String} array with user choices.
+     * @param answerState A {@code boolean} array with user choices, each choice selected is equal to {@code true}.
      * @return a <tt>boolean</tt> representing if the answers was right, true = right / false = wrong.
      */
-    public boolean chackAnswer(String[] answer) {
+    public boolean checkAnswer(boolean[] answerState) {
 
-        /*
-            TODO : 1 - Get answer string array from assets/questions.json
-            TODO : 2 - Loop trough all array boolean with an iterator
-            TODO : 3 - Compare the two strings array using equalsIgnoreCase method
-            TODO : 4 - Return the result
-        */
+        //Compare the values on the answer state arrays and assign it to passed variable
+        if (passed = Arrays.equals(possibleAnswersState, answerState)) {
+            // Question passed...
+        } else {
+            // Upsss...Not passed..!
+        }
 
-        return false;//#TESTE ONLY
+        return passed;
     }
 }

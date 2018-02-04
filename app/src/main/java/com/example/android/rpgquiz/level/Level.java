@@ -22,6 +22,13 @@ public class Level {
     private int score;// Level score
     private boolean locked;// Level locked state
 
+    public Level(String name, ArrayList<Question> questions, int score, boolean locked) {
+        this.name = name;
+        this.questions = questions;
+        this.score = score;
+        this.locked = locked;
+    }
+
     /**
      * This method set up this level name
      **/

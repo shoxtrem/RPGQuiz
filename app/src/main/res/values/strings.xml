@@ -40,4 +40,36 @@
     <string name="radioButtonChoice2FourthActivity">Touch the shiny object</string>
     <string name="radioButtonChoice3FourthActivity">Go to the main room</string>
     <string name="radioButtonChoice4FourthActivity">Wait here and stay</string>
+
+    <!--Community Menu-->
+    <string name="goBack">Go Back</string>
+    <string name="mainTextIntro">This APP is the work of the following users:</string>
+
+    <!--Name of Users that contributed to the project & stuff related-->
+    <string name="mainTextList">Main Idea</string>
+    <string name="idea">Stanislas Mihaljcuk(shoxtrem)</string>
+    <string name="contribution">Contributors</string>
+    <string name="userTest">TEST</string>
+
+    <string name="user1">TEST1</string>
+    <string name="user2">TEST2</string>
+    <string name="user3">TEST3</string>
+    <string name="user4">TEST4</string>
+    <string name="user5">TEST5</string>
+    <string name="user6">TEST6</string>
+    <string name="user7">TEST7</string>
+    <string name="user8">TEST8</string>
+    <string name="user9">TEST9</string>
+    <string name="user10">TEST10</string>
+    <string name="user11">TEST11</string>
+    <string name="user12">TEST12</string>
+    <string name="user13">TEST13</string>
+    <string name="user14">TEST14</string>
+    <string name="user15">TEST15</string>
+    <string name="user16">TEST16</string>
+    <string name="user17">TEST17</string>
+    <string name="user18">Diogo Rodrigues (dfrodri)</string>
+    <string name="user19">TEST19</string>
+    <string name="user20">TEST20</string>
+
 </resources>

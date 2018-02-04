@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dungeon"
+    tools:context="com.example.android.rpgquiz.Community"
+    tools:ignore="contentDescription">
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginTextCommunity"
+        android:background="@drawable/logo_border"
+        android:padding="@dimen/paddingTextCommunity"
+        android:text="@string/mainTextIntro"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="@dimen/textSizeCommunity" />
+
+    <TextView
+        android:id="@+id/mainIdea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intro"
+        android:layout_marginBottom="@dimen/marginTextCommunity"
+        android:layout_marginLeft="@dimen/marginTextCommunity"
+        android:layout_marginRight="@dimen/marginTextCommunity"
+        android:background="@drawable/logo_border"
+        android:paddingLeft="@dimen/paddingTextCommunity"
+        android:paddingRight="@dimen/paddingTextCommunity"
+        android:text=""
+        android:textColor="@color/text"
+        android:textSize="@dimen/textSizeCommunity" />
+
+    <ScrollView
+        android:id="@+id/usersScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/goBack"
+        android:layout_below="@id/mainIdea"
+        android:layout_marginBottom="@dimen/marginTextCommunity"
+        android:layout_marginLeft="@dimen/marginTextCommunity"
+        android:layout_marginRight="@dimen/marginTextCommunity">
+
+        <TextView
+            android:id="@+id/usersName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_border"
+            android:paddingLeft="@dimen/paddingTextCommunity"
+            android:paddingRight="@dimen/paddingTextCommunity"
+            android:text=""
+            android:textColor="@color/text"
+            android:textSize="@dimen/textSizeCommunity" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/logo_border"
+        android:onClick="goBack"
+        android:paddingBottom="@dimen/paddingTopAndDownButton"
+        android:paddingLeft="@dimen/paddingLeftAndRightButton"
+        android:paddingRight="@dimen/paddingLeftAndRightButton"
+        android:paddingTop="@dimen/paddingTopAndDownButton"
+        android:text="@string/goBack"
+        android:textSize="@dimen/button" />
+
+</RelativeLayout>

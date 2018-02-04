@@ -11,4 +11,26 @@
 	<dimen name="storyPadding">14dp</dimen>
     <dimen name="storyTextSize">26sp</dimen>
     <dimen name="choicePadding">25dp</dimen>
+
+    <!--main menu-->
+    <dimen name="logo">200dp</dimen>
+    <dimen name="options">30dp</dimen>
+    <dimen name="marginOptions">8dp</dimen>
+
+    <!--level selection-->
+    <dimen name="levelHeight">30dp</dimen>
+    <dimen name="levelWidth">100dp</dimen>
+    <dimen name="numberSize">30dp</dimen>
+    <dimen name="paddingLevel">5dp</dimen>
+    <dimen name="levelSelector">30dp</dimen>
+    <dimen name="marginLevel">10dp</dimen>
+
+    <!--Community-->
+    <dimen name="button">18sp</dimen>
+    <dimen name="paddingLeftAndRightButton">20dp</dimen>
+    <dimen name="paddingTopAndDownButton">10dp</dimen>
+    <dimen name="marginTextCommunity">20dp</dimen>
+    <dimen name="paddingTextCommunity">15dp</dimen>
+    <dimen name="textSizeCommunity">14sp</dimen>
+
 </resources>

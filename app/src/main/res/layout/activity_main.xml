@@ -3,64 +3,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/dungeon"
     android:orientation="vertical"
-    android:padding="@dimen/layout_padding"
-    tools:context="com.example.android.rpgquiz.MainActivity">
+    tools:context="com.example.android.rpgquiz.MainActivity"
+    tools:ignore="contentDescription">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/linear_layout"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="@font/new_font"
-        android:text="@string/game_text"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/game_text_size" />
+    <Button
+        android:layout_width="@dimen/options"
+        android:layout_height="@dimen/options"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/marginOptions"
+        android:background="@drawable/option_"
+        android:onClick="languageSelector"/>
+
+    <Button
+        android:id="@+id/logo"
+        android:onClick="community"
+        android:layout_width="@dimen/logo"
+        android:layout_height="@dimen/logo"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/logo2" />
+
+    <Button
+        android:layout_width="@dimen/levelSelector"
+        android:layout_height="@dimen/levelSelector"
+        android:layout_alignBottom="@id/level"
+        android:layout_below="@id/logo"
+        android:onClick="previousLevel"
+        android:layout_toLeftOf="@id/level"
+        android:layout_toStartOf="@id/level"
+        android:background="@drawable/logo_border"
+        android:foreground="@drawable/arrow_left" />
 
     <LinearLayout
-        android:id="@+id/linear_layout"
+        android:id="@+id/level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/language_button"
-        android:layout_centerHorizontal="true">
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/paddingLevel"
+        android:paddingRight="@dimen/paddingLevel"
+        android:layout_marginEnd="@dimen/marginLevel"
+        android:layout_marginLeft="@dimen/marginLevel"
+        android:layout_marginRight="@dimen/marginLevel"
+        android:layout_marginStart="@dimen/marginLevel"
+        android:background="@drawable/logo_border">
 
-        <Button
-            android:id="@+id/start_button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="@dimen/button_margin"
-            android:drawableLeft="@drawable/start"
-            android:drawablePadding="@dimen/drawable_padding"
-            android:fontFamily="@font/new_font"
-            android:text="@string/start_button"
-            android:textSize="@dimen/button_text_size" />
+        <ImageView
+            android:layout_width="@dimen/levelWidth"
+            android:layout_height="@dimen/levelHeight"
+            android:background="@drawable/level" />
 
-        <Button
-            android:id="@+id/help_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin"
-            android:drawableLeft="@drawable/help"
-            android:drawablePadding="@dimen/drawable_padding"
-            android:fontFamily="@font/new_font"
-            android:gravity="center"
-            android:text="@string/help_button"
-            android:textSize="@dimen/button_text_size" />
+        <ImageView
+            android:layout_width="@dimen/numberSize"
+            android:layout_height="@dimen/numberSize"
+            android:background="@drawable/n1" />
+
+        <ImageView
+            android:layout_width="@dimen/numberSize"
+            android:layout_height="@dimen/numberSize"
+            android:background="@drawable/n_separator" />
+
+        <ImageView
+            android:layout_width="@dimen/numberSize"
+            android:layout_height="@dimen/numberSize"
+            android:background="@drawable/n1" />
+
     </LinearLayout>
 
     <Button
-        android:id="@+id/language_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:layout_marginTop="@dimen/button_margin"
-        android:drawableLeft="@drawable/language"
-        android:drawablePadding="@dimen/drawable_padding"
-        android:fontFamily="@font/new_font"
-        android:text="@string/language_button"
-        android:textSize="@dimen/button_text_size" />
+        android:layout_width="@dimen/levelSelector"
+        android:layout_height="@dimen/levelSelector"
+        android:layout_alignBottom="@id/level"
+        android:layout_below="@id/logo"
+        android:onClick="nextLevel"
+        android:layout_toEndOf="@id/level"
+        android:layout_toRightOf="@id/level"
+        android:background="@drawable/logo_border"
+        android:foreground="@drawable/arrow_right" />
 
 </RelativeLayout>

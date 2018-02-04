@@ -4,36 +4,39 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
-    /**
-     * The submit Button listener
-     */
-    View.OnClickListener submitClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(), TemplateActivity.class);
-            startActivity(intent);
-        }
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button help_button = findViewById(R.id.help_button);
-        help_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent helpIntent = new Intent(MainActivity.this, HelpActivity.class);
-                startActivity(helpIntent);
-            }
-        });
-
-        Button submitB = findViewById(R.id.start_button);
-        submitB.setOnClickListener(submitClickListener);
     }
+
+    public void languageSelector(View view){
+        //add code here to change languages
+    }
+
+    public void community(View view){
+        Intent community = new Intent(this, Community.class);
+        startActivity(community);
+    }
+
+    public void previousLevel(View view){
+        //add code to swap images
+        //images of numbers start with n<number>
+        //e.g. image to number 1 is n1
+        //image for the - separator is n_separator
+        //we can make levels like 1-1, 9-3, 10-5, etc
+    }
+
+    public void nextLevel(View view){
+        //add code to swap images
+        //images of numbers start with n<number>
+        //e.g. image to number 1 is n1
+        //image for the - separator is n_separator
+        //we can make levels like 1-1, 9-3, 10-5, etc
+    }
+
 }

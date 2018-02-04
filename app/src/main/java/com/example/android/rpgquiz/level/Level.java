@@ -22,6 +22,15 @@ public class Level {
     private int score;// Level score
     private boolean locked;// Level locked state
 
+    /**
+     * The {@link Level} object public constructor instantiate a brand new {@link Level}.
+     *
+     * @param name      A {@code String} representing the level textual name.
+     * @param questions A {@link ArrayList} with questions inside.
+     * @param score     A {@code int} representing the level score.
+     * @param locked    A {@code boolean} representing the level locked state.
+     * @see ArrayList
+     */
     public Level(String name, ArrayList<Question> questions, int score, boolean locked) {
         this.name = name;
         this.questions = questions;

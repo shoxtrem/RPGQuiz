@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidStudioProjects-RPGQuiz.iml" filepath="$PROJECT_DIR$/AndroidStudioProjects-RPGQuiz.iml" />
       <module fileurl="file://$PROJECT_DIR$/RPGQuiz.iml" filepath="$PROJECT_DIR$/RPGQuiz.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/RPGQuiz-app.iml" filepath="$PROJECT_DIR$/app/RPGQuiz-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

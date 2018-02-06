@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Community"></activity>
+        <activity android:name=".Community" />
+        <activity android:name=".Language"></activity>
     </application>
 
 </manifest>

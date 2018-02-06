@@ -41,8 +41,11 @@
     <string name="radioButtonChoice3FourthActivity">Go to the main room</string>
     <string name="radioButtonChoice4FourthActivity">Wait here and stay</string>
 
+    <!--Levels-->
+    <string name="initialLevel">Level 1 \&#8211; 1</string>
+
     <!--Community Menu-->
-    <string name="goBack">Go Back</string>
+    <string name="goBack">Back</string>
     <string name="mainTextIntro">This APP is the work of the following users:</string>
 
     <!--Name of Users that contributed to the project & stuff related-->
@@ -51,11 +54,11 @@
     <string name="contribution">Contributors</string>
     <string name="userTest">TEST</string>
 
-    <string name="user1">TEST1</string>
-    <string name="user2">TEST2</string>
-    <string name="user3">TEST3</string>
-    <string name="user4">TEST4</string>
-    <string name="user5">TEST5</string>
+    <string name="user1">Fabien Boismoreau (Bwaim)</string>
+    <string name="user2">Maria Leoveanu (maria.leoveanu)</string>
+    <string name="user3">Fábio Gouveia (Fabio_Gouveia)</string>
+    <string name="user4">Diogo Rodrigues (dfrodri)</string>
+    <string name="user5">Marius Nicolae (bytao7mao)</string>
     <string name="user6">TEST6</string>
     <string name="user7">TEST7</string>
     <string name="user8">TEST8</string>
@@ -68,8 +71,23 @@
     <string name="user15">TEST15</string>
     <string name="user16">TEST16</string>
     <string name="user17">TEST17</string>
-    <string name="user18">Diogo Rodrigues (dfrodri)</string>
+    <string name="user18">TEST18</string>
     <string name="user19">TEST19</string>
     <string name="user20">TEST20</string>
+
+    <!--Language Menu-->
+    <string name="arabic">Arabic</string>
+    <string name="czech">Czech</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="german">German</string>
+    <string name="hebrew">Hebrew</string>
+    <string name="italian">Italian</string>
+    <string name="lithuanian">Lithuanian</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="spanish">Spanish</string>
+    <string name="turkish">Turkish</string>
+
+    <string name="selectLanguage">Choose your language</string>
 
 </resources>

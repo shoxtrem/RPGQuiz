@@ -12,18 +12,20 @@
     <dimen name="storyTextSize">26sp</dimen>
     <dimen name="choicePadding">25dp</dimen>
 
-    <!--main menu-->
-    <dimen name="logo">200dp</dimen>
-    <dimen name="options">30dp</dimen>
-    <dimen name="marginOptions">8dp</dimen>
+    <!--Main Menu-->
+    <dimen name="logoPortrait">250dp</dimen>
+    <dimen name="logoLandscape">180dp</dimen>
+    <dimen name="options">40dp</dimen>
+    <dimen name="marginOptions">10dp</dimen>
+    <dimen name="languageTextSize">30sp</dimen>
 
-    <!--level selection-->
-    <dimen name="levelHeight">30dp</dimen>
-    <dimen name="levelWidth">100dp</dimen>
-    <dimen name="numberSize">30dp</dimen>
-    <dimen name="paddingLevel">5dp</dimen>
-    <dimen name="levelSelector">30dp</dimen>
-    <dimen name="marginLevel">10dp</dimen>
+    <!--Level Selection-->
+    <dimen name="levelHeight">50dp</dimen>
+    <dimen name="levelWidth">190dp</dimen>
+    <dimen name="paddingLevel">10dp</dimen>
+    <dimen name="levelSelector">50dp</dimen>
+    <dimen name="marginLevel">2dp</dimen>
+    <dimen name="levelTextSize">30sp</dimen>
 
     <!--Community-->
     <dimen name="button">18sp</dimen>
@@ -32,5 +34,11 @@
     <dimen name="marginTextCommunity">20dp</dimen>
     <dimen name="paddingTextCommunity">15dp</dimen>
     <dimen name="textSizeCommunity">14sp</dimen>
+
+    <!--Language Menu-->
+    <dimen name="paddingOptions">10dp</dimen>
+
+    <!--Others-->
+    <dimen name="genericText">30sp</dimen>
 
 </resources>

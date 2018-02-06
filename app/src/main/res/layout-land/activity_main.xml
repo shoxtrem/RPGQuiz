@@ -9,35 +9,32 @@
     tools:ignore="contentDescription">
 
     <Button
-        android:id="@+id/options"
         android:layout_width="@dimen/options"
         android:layout_height="@dimen/options"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/marginOptions"
         android:background="@drawable/option_"
-        android:onClick="languageSelector" />
+        android:onClick="languageSelector"/>
 
     <Button
         android:id="@+id/logo"
-        android:layout_width="@dimen/logoPortrait"
-        android:layout_height="@dimen/logoPortrait"
+        android:onClick="community"
+        android:layout_width="@dimen/logoLandscape"
+        android:layout_height="@dimen/logoLandscape"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/logo2"
-        android:onClick="community" />
+        android:background="@drawable/logo2" />
 
     <Button
-        android:id="@+id/previous"
         android:layout_width="@dimen/levelSelector"
         android:layout_height="@dimen/levelSelector"
         android:layout_alignBottom="@id/level"
         android:layout_below="@id/logo"
+        android:onClick="previousLevel"
         android:layout_toLeftOf="@id/level"
         android:layout_toStartOf="@id/level"
         android:background="@drawable/arrow_border"
-        android:foreground="@drawable/arrow_left"
-        android:onClick="previousLevel" />
+        android:foreground="@drawable/arrow_left" />
 
     <Button
         android:id="@+id/level"
@@ -60,15 +57,14 @@
         android:textSize="@dimen/levelTextSize" />
 
     <Button
-        android:id="@+id/next"
         android:layout_width="@dimen/levelSelector"
         android:layout_height="@dimen/levelSelector"
         android:layout_alignBottom="@id/level"
         android:layout_below="@id/logo"
+        android:onClick="nextLevel"
         android:layout_toEndOf="@id/level"
         android:layout_toRightOf="@id/level"
         android:background="@drawable/arrow_border"
-        android:foreground="@drawable/arrow_right"
-        android:onClick="nextLevel" />
+        android:foreground="@drawable/arrow_right" />
 
 </RelativeLayout>

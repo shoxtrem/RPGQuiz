@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dungeon"
+    android:orientation="vertical"
+    tools:context="com.example.android.rpgquiz.Language"
+    tools:ignore="contentDescription">
+
+    <TextView
+        android:id="@+id/languageAnnounce"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:padding="@dimen/paddingOptions"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginOptions"
+        android:background="@drawable/arrow_border"
+        android:fontFamily="@font/alagard"
+        android:layout_alignParentTop="true"
+        android:text="@string/selectLanguage"
+        android:textSize="@dimen/languageTextSize"
+        android:textColor="@color/text"/>
+
+
+    <ScrollView
+        android:layout_below="@id/languageAnnounce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/languageReturn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/arabic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginOptions"
+                android:background="@drawable/level_border"
+                android:fontFamily="@font/alagard"
+                android:onClick="arabic"
+                android:text="@string/arabic"
+                android:textSize="@dimen/languageTextSize" />
+
+            <Button
+                android:id="@+id/czech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginOptions"
+                android:background="@drawable/level_border"
+                android:fontFamily="@font/alagard"
+                android:onClick="czech"
+                android:text="@string/czech"
+                android:textSize="@dimen/languageTextSize" />
+
+            <Button
+                android:id="@+id/english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginOptions"
+                android:background="@drawable/level_border"
+                android:fontFamily="@font/alagard"
+                android:onClick="english"
+                android:text="@string/english"
+                android:textSize="@dimen/languageTextSize" />
+
+            <Button
+                android:id="@+id/french"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginOptions"
+                android:background="@drawable/level_border"
+                android:fontFamily="@font/alagard"
+                android:onClick="french"
+                android:text="@string/french"
+                android:textSize="@dimen/languageTextSize" />
+
+            <Button
+                android:id="@+id/german"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginOptions"
+                android:background="@drawable/level_border"
+                android:fontFamily="@font/alagard"
+                android:onClick="german"
+                android:text="@string/german"
+                android:textSize="@dimen/languageTextSize" />
+
+            <Button
+                android:id="@+id/hebrew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginOptions"
+                android:background="@drawable/level_border"
+                android:fontFamily="@font/alagard"
+                android:onClick="hebrew"
+                android:text="@string/hebrew"
+                android:textSize="@dimen/languageTextSize" />
+
+            <Button
+                android:id="@+id/italian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginOptions"
+                android:background="@drawable/level_border"
+                android:fontFamily="@font/alagard"
+                android:onClick="italian"
+                android:text="@string/italian"
+                android:textSize="@dimen/languageTextSize" />
+
+            <Button
+                android:id="@+id/lithuanian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginOptions"
+                android:background="@drawable/level_border"
+                android:fontFamily="@font/alagard"
+                android:onClick="lithuanian"
+                android:text="@string/lithuanian"
+                android:textSize="@dimen/languageTextSize" />
+
+            <Button
+                android:id="@+id/portuguese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginOptions"
+                android:background="@drawable/level_border"
+                android:fontFamily="@font/alagard"
+                android:onClick="portuguese"
+                android:text="@string/portuguese"
+                android:textSize="@dimen/languageTextSize" />
+
+
+            <Button
+                android:id="@+id/spanish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginOptions"
+                android:background="@drawable/level_border"
+                android:fontFamily="@font/alagard"
+                android:onClick="spanish"
+                android:text="@string/spanish"
+                android:textSize="@dimen/languageTextSize" />
+
+
+            <Button
+                android:id="@+id/turkish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginOptions"
+                android:background="@drawable/level_border"
+                android:fontFamily="@font/alagard"
+                android:onClick="turkish"
+                android:text="@string/turkish"
+                android:textSize="@dimen/languageTextSize" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/languageReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/marginOptions"
+        android:background="@drawable/arrow_border"
+        android:fontFamily="@font/alagard"
+        android:text="@string/goBack"
+        android:textSize="@dimen/genericText" />
+
+
+</RelativeLayout>

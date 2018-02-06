@@ -42,7 +42,7 @@
     <string name="radioButtonChoice4FourthActivity">Wait here and stay</string>
 
     <!--Levels-->
-    <string name="initialLevel">Level 1 \&#8211 1</string>
+    <string name="initialLevel">Level 1 \&#8211; 1</string>
 
     <!--Community Menu-->
     <string name="goBack">Back</string>

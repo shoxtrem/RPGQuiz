@@ -3,6 +3,22 @@
     {
       "question": "Example of multiple choice question?",
       "options": [
+        [
+          "Example 1",
+          true
+        ],
+        [
+          "Example 2",
+          false
+        ],
+        [
+          "Example 3",
+          true
+        ],
+        [
+          "Example 4",
+          false
+        ]
       ]
     }
   ]

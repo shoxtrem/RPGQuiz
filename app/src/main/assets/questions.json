@@ -1,7 +1,9 @@
 {
   "level": [
     {
-      "question": "Example of multiple choice question?"
+      "question": "Example of multiple choice question?",
+      "options": [
+      ]
     }
   ]
 }

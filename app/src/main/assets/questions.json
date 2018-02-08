@@ -20,6 +20,49 @@
           false
         ]
       ]
+    },
+    {
+      "question": "Example of one choice question?",
+      "options": [
+        [
+          "Example 1",
+          false
+        ],
+        [
+          "Example 2",
+          false
+        ],
+        [
+          "Example 3",
+          true
+        ],
+        [
+          "Example 4",
+          false
+        ]
+      ]
+    },
+    {
+      "question": "Example of true/false question?",
+      "options": [
+        [
+          "Example 1",
+          false
+        ],
+        [
+          "Example 2",
+          true
+        ]
+      ]
+    },
+    {
+      "question": "Example of textual answer question?",
+      "options": [
+        [
+          "Example 1, Example 2, Example 3, Example 4, Example 5",
+          true
+        ]
+      ]
     }
   ]
 }

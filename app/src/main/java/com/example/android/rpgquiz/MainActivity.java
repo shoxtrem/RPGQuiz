@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,14 +39,8 @@ public class MainActivity extends AppCompatActivity {
         next.setVisibility(View.GONE);
 
         //language display
-        LinearLayout languageSelectionOne = this.findViewById(R.id.centerLanguage);
-        LinearLayout languageSelectionTwo = this.findViewById(R.id.languageLineOne);
-        LinearLayout languageSelectionThree = this.findViewById(R.id.languageLineTwo);
         Button languageReturn = this.findViewById(R.id.languageReturn);
 
-        languageSelectionOne.setVisibility(View.VISIBLE);
-        languageSelectionTwo.setVisibility(View.VISIBLE);
-        languageSelectionThree.setVisibility(View.VISIBLE);
         languageReturn.setVisibility(View.VISIBLE);
 
     }
